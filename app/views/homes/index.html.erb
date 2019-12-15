@@ -1,0 +1,17 @@
+<div class="jumbotron text-center">
+  <h1>Welcome to Job App</h1>
+  <p>Apply your Job Application!</p>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <% @works.each do |works| %>
+      <div class="col-sm-4">
+        <h3><%= works.title %></h3>
+        <p><b><%= works.position %></b><br />
+           <%= works.location %><br />
+           <%= works.description %></p>
+      </div>
+    <% end %>
+  </div>
+</div>
